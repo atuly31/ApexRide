@@ -1,0 +1,80 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: admin_service # unique Id for Ruote
+              uri: http://ADMIN  # forward the request to the admin service
+              predicates:
+                - Path=/api/v1/admin/** # Assuming your Admin service uses this base path
+              filters:
+                # - StripPrefix=1 # Uncomment if your Admin service controllers don't expect /api/v1/admins in their base path
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment} # Passes the full path to the Admin service
+
+            # Route to Authentication Service
+            - id: auth_service
+              uri: lb://AUTHSERVICE
+              predicates:
+                - Path=/auth/**
+              filters:
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment}
+
+            # Route to User Service
+            - id: user_service
+              uri: lb://USER
+              predicates:
+                - Path=/api/v1/users/**
+              filters:
+                # - StripPrefix=1
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment}
+
+            # Route to Driver Service
+            - id: driver_service
+              uri: lb://DRIVER
+              predicates:
+                - Path=/api/v1/drivers/**
+              filters:
+                # - StripPrefix=1
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment}
+
+            # Route to Ride Service
+            - id: ride_service
+              uri: lb://RIDE
+              predicates:
+                - Path=/api/v1/rides/**
+              filters:
+                # - StripPrefix=1
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment}
+
+            # Route to Payment Service
+            - id: payment_service
+              uri: lb://PAYMENT # 'PAYMENT' must match the spring.application.name of your Payment service
+              predicates:
+                - Path=/api/v1/payments/** # Assuming your Payment service uses this base path
+              filters:
+                # - StripPrefix=1 # Uncomment if your Payment service endpoints don't expect /api/v1/payments in their base path
+                - Authentication
+                - RewritePath=/(?<segment>.*), /${segment} # This passes the full path from the predicate
+
+
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+
+  # Eureka Client Configuration for the API Gateway itself
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: true
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+
+# JWT Configuration (Crucial: This secret MUST match the secret in your Auth Service)
+# jwt.secret=<YOUR_JWT_SECRET_KEY_HERE> # Add your JWT secret here if you have a custom filter named 'Authentication'

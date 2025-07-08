@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to ApexRide!</title>
+</head>
+<body>
+<h1>Welcome to ApexRide, <span th:text="${Username}">${Username}</span>!</h1>
+<p>Dear <b th:text="${Username}">${Username}</b>,</p>
+
+<p>Thank you for registering with us! We're excited to have you onboard.</p>
+
+<p>Here are your registration details:</p>
+<ul>
+    <li>Username: <span th:text="${Username}">${Username}</span></li>
+    <li>Email: <span th:text="${email}">${email}</span></li>
+</ul>
+
+<p>We look forward to seeing you active on our platform.</p>
+
+<p>Best regards,<br/>Your ApexRide Team</p>
+</body>
+</html>

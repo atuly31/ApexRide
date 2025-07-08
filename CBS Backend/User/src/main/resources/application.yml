@@ -1,0 +1,21 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: apexdrive31@gmail.com
+    password: ebuw etub teei qivr # Be cautious with hardcoding passwords in production
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging: # This is a top-level key, parallel to 'spring'
+  level:
+    org.springframework.mail: DEBUG
+    org.springframework.mail.javamail: DEBUG
+    # This is for the underlying JavaMail API, very useful for detailed errors
+    com.sun.mail.smtp: DEBUG
+    com.sun.mail.util: DEBUG
+
