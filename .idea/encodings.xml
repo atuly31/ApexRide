@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/AuthService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Config-Server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Driver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/EurekaServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Feedback/Feedback/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/Ride/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Backend/Backend Code/User/src/main/java" charset="UTF-8" />
+  </component>
+</project>

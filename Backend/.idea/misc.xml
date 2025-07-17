@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Ride/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/User/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Admin/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Driver/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Payment/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/Feedback/Feedback/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/AuthService/pom.xml" />
+        <option value="$PROJECT_DIR$/CabBookingMicroService-test/EurekaServer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/AuthService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Driver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/EurekaServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Feedback/Feedback/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/Ride/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CabBookingMicroService-test/User/src/main/java" charset="UTF-8" />
+  </component>
+</project>
